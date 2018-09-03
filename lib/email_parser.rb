@@ -13,6 +13,6 @@ class EmailParser
   def parse 
     #emails.split(", ") || emails.split(" ")
     emails.split(/,?\s|,/).uniq 
-    # Splits the e-mail at " " or ", " or "," and returns
+    # Splits the e-mail at " " or ", " or "," and returns an array of unique emails
   end
 end
